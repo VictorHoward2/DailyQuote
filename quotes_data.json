@@ -1,0 +1,16 @@
+{
+  "quotes": [
+    "Hôm nay là một ngày mới, hãy sống trọn vẹn!",
+    "Thành công không đến từ những gì bạn làm thỉnh thoảng, mà từ những gì bạn làm thường xuyên.",
+    "Đừng sợ thất bại, hãy sợ việc không dám thử.",
+    "Mỗi ngày là một cơ hội mới để trở nên tốt hơn.",
+    "Hãy làm những gì bạn yêu thích, và yêu thích những gì bạn làm."
+  ],
+  "display_time": 1800,
+  "current_index": 2,
+  "show_controls": true,
+  "always_on_top": true,
+  "random_mode": false,
+  "show_notification_on_change": true,
+  "auto_advance_enabled": true
+}
