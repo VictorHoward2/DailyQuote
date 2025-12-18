@@ -119,14 +119,27 @@ class DailyQuoteApp:
             width=10
         ).pack(side=tk.LEFT, padx=2)
         
-        # Label hiển thị thời gian còn lại (nếu có)
-        self.timer_label = tk.Label(
-            self.main_frame,
+        # Frame chứa timer và quote counter trên cùng một dòng
+        self.info_frame = ttk.Frame(self.main_frame)
+        self.info_frame.pack(fill=tk.X, pady=(5, 0))
+        
+        # Label hiển thị số quote hiện tại/tổng số (căn trái)
+        self.quote_counter_label = tk.Label(
+            self.info_frame,
             text="",
             font=("Arial", 8),
             fg="#666666"
         )
-        self.timer_label.pack(pady=(5, 0))
+        self.quote_counter_label.pack(side=tk.LEFT)
+        
+        # Label hiển thị thời gian còn lại (căn phải)
+        self.timer_label = tk.Label(
+            self.info_frame,
+            text="",
+            font=("Arial", 8),
+            fg="#666666"
+        )
+        self.timer_label.pack(side=tk.RIGHT)
     
     def on_window_resize(self, event):
         """Cập nhật wraplength khi cửa sổ thay đổi kích thước"""
@@ -203,11 +216,15 @@ class DailyQuoteApp:
             if 0 <= self.current_index < len(self.quotes):
                 quote = self.quotes[self.current_index]
                 self.quote_label.config(text=quote)
+                # Cập nhật hiển thị số quote (current_index + 1 vì index bắt đầu từ 0)
+                self.quote_counter_label.config(text=f"Quote {self.current_index + 1}/{len(self.quotes)}")
             else:
                 self.current_index = 0
                 self.quote_label.config(text=self.quotes[0])
+                self.quote_counter_label.config(text=f"Quote 1/{len(self.quotes)}")
         else:
             self.quote_label.config(text="Chưa có câu nói nào. Hãy thêm câu nói trong phần Cài đặt.")
+            self.quote_counter_label.config(text="Quote 0/0")
         # Cập nhật tooltip tray icon
         self.update_tray_tooltip()
     
