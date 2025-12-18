@@ -121,14 +121,14 @@
     "Đọc sách là thói quen tốt. Hơn cả việc cung cấp kiến thức, nó mang lại năng lượng tích cực.",
     "Người có thu nhập càng cao thì thời gian dành cho việc đọc sách mỗi ngày càng nhiều.",
     "Tri thức là sức mạnh.",
-    "Khí chất con người do trời sinh, rất khó thay đổi. Chỉ có đọc sách mới có thể thay đổi cái gọi là khí chất này."
-
+    "Khí chất con người do trời sinh, rất khó thay đổi. Chỉ có đọc sách mới có thể thay đổi cái gọi là khí chất này.",
+    "Những việc ta không làm được khi bận thì cũng không làm được khi rảnh."
   ],
-  "display_time": 1800,
-  "current_index": 0,
-  "show_controls": false,
-  "always_on_top": true,
-  "random_mode": false,
+  "display_time": 600,
+  "current_index": 64,
+  "show_controls": true,
+  "always_on_top": false,
+  "random_mode": true,
   "show_notification_on_change": true,
   "auto_advance_enabled": true
 }

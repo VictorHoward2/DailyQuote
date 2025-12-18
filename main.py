@@ -19,7 +19,7 @@ class DailyQuoteApp:
         self.root.minsize(300, 120)  # Kích thước tối thiểu
         
         # Load dữ liệu (sẽ khởi tạo các biến với giá trị từ file hoặc giá trị mặc định)
-        self.data_file = "quotes_data.json"
+        self.data_file = "D:\\Projects\\DailyQuote\\quotes_data.json"
         
         # Khởi tạo các biến cần thiết trước khi load (những biến không được lưu trong file)
         self.advance_thread = None
